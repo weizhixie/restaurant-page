@@ -27,6 +27,43 @@ body {
     font-family: var(--main-font-family), var(--fallback-font);
 }
 
+/* header */
+.header-container {
+    background-color: var(--oxford-blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 1px solid var(--platinum);
+}
+
+.header-img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.nav-btn {
+    border: none;
+    background-color: var(--oxford-blue);
+    margin: 15px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--platinum);
+}
+
+.nav-btn:after {
+    transition: all ease-in-out .5s;
+    background-color: var(--web-orange);
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+}
+
+.nav-btn:hover:after {
+    width: 100%;
+}
+
+/* homepage hero section */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--hero-bg);
     background-size: cover;
