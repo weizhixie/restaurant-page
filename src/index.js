@@ -1,6 +1,7 @@
 import "./styles.css";
 import { loadHomePage } from "./homepage.js";
 import { loadMenuPage } from "./menu-page.js";
+import { loadAboutPage } from "./about-page.js";
 
 (() => {
     const content = document.querySelector("#content");
@@ -8,6 +9,7 @@ import { loadMenuPage } from "./menu-page.js";
     const pages = {
         "home-btn": loadHomePage,
         "menu-btn": loadMenuPage,
+        "about-btn": loadAboutPage,
     };
 
     navBtns.forEach((btn) => {
