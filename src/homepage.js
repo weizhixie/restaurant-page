@@ -20,7 +20,7 @@ export function loadHomePage() {
     heroTextWrapper.appendChild(heroPara);
 
     const heroOrderBtn = document.createElement("button");
-    heroOrderBtn.classList.add("hero-order-btn");
+    heroOrderBtn.classList.add("hero-order-btn", "cursor");
     heroOrderBtn.textContent = `Order Now`;
     heroTextWrapper.appendChild(heroOrderBtn);
 

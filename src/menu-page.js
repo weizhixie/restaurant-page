@@ -64,18 +64,18 @@ function createMenuCard(meal) {
     menuCard.classList.add("menu-card");
 
     const menuCardImg = document.createElement("img");
-    menuCardImg.classList.add("menu-card-img");
+    menuCardImg.classList.add("menu-card-img", "cursor");
     menuCardImg.src = meal.image;
     menuCardImg.alt = meal.title;
 
     const menuCardTitleWrapper = document.createElement("div");
 
     const menuCardTitle = document.createElement("h3");
-    menuCardTitle.classList.add("menu-card-title");
+    menuCardTitle.classList.add("menu-card-title", "cursor");
     menuCardTitle.textContent = meal.title;
 
     const menuCardPrice = document.createElement("p");
-    menuCardPrice.classList.add("menu-card-price");
+    menuCardPrice.classList.add("menu-card-price", "cursor");
     menuCardPrice.textContent = meal.price.toLocaleString("en-US", { style: "currency", currency: "USD" });
 
     const menuCardDescription = document.createElement("p");

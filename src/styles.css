@@ -28,6 +28,10 @@ body {
     font-family: var(--main-font-family), var(--fallback-font);
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 /* header */
 .header-container {
     background-color: var(--oxford-blue);
@@ -38,7 +42,6 @@ body {
 }
 
 .header-img:hover {
-    cursor: pointer;
     transform: scale(1.2);
 }
 
@@ -47,7 +50,6 @@ body {
     background-color: var(--oxford-blue);
     margin: 15px;
     font-size: 1.8rem;
-    cursor: pointer;
     color: var(--platinum);
 }
 
@@ -99,7 +101,6 @@ body {
     background-color: var(--web-orange);
     padding: 14px 28px;
     font-size: 1rem;
-    cursor: pointer;
     color: var(--white);
     margin-top: 12px;
 }
@@ -154,17 +155,12 @@ body {
     box-shadow: 0 6px 12px var(--oxford-blue);
 }
 
-.menu-card-title {
-    cursor: pointer;
-}
-
 .menu-card-price {
     font-size: 1.4rem;
     text-decoration: underline var(--web-orange);
     text-decoration-skip-ink: none;
     display: block;
     margin-top: 10px;
-    cursor: pointer;
 }
 
 .menu-card-body {
