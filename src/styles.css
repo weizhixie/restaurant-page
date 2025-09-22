@@ -10,6 +10,7 @@
 
 :root {
     --hero-bg: url("./images/hero-bg.jpg");
+    --menu-bg: url(./images/menu-bg.jpg);
 
     --fallback-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --main-font-family: "Roboto";
@@ -106,4 +107,66 @@ body {
 .hero-order-btn:hover {
     background-color: var(--white);
     color: var(--web-orange);
+}
+
+/* menu page section*/
+.menu-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), var(--menu-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0 15px;
+}
+
+.menu-heading {
+    color: var(--white);
+    font-size: 2.5rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 30px;
+    font-size: 1.3rem;
+}
+
+.menu-card {
+    background: linear-gradient(to right, var(--platinum) 70%, var(--web-orange) 100%);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "image title" "body body";
+    gap: 5px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.menu-card-img {
+    width: 170px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.menu-card-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px var(--oxford-blue);
+}
+
+.menu-card-title {
+    cursor: pointer;
+}
+
+.menu-card-price {
+    font-size: 1.4rem;
+    text-decoration: underline var(--web-orange);
+    text-decoration-skip-ink: none;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.menu-card-body {
+    grid-area: body;
 }
