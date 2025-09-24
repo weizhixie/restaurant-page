@@ -24,7 +24,6 @@
 }
 
 body {
-    background-color: var(--black);
     font-family: var(--main-font-family), var(--fallback-font);
 }
 
@@ -192,4 +191,60 @@ body {
     padding-bottom: 10px;
     margin-bottom: 25px;
     font-size: 4rem;
+}
+
+/* contact page section*/
+.contact-section {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vh 20px;
+}
+
+.contact-addr-title,
+.contact-us-title {
+    font-size: 3.5rem;
+    text-decoration: underline 3px var(--web-orange);
+    text-underline-offset: 8px;
+}
+
+.contact-address,
+.contact-open-time {
+    white-space: pre;
+    padding: 12px 0;
+    font-size: 1.2rem;
+}
+
+.contact-map {
+    width: 45vw;
+    max-height: 50vh;
+    box-shadow: 2px 2px 1px 1px var(--platinum);
+}
+
+.contact-form {
+    padding: 60px 20px 0;
+}
+
+.input-field {
+    display: block;
+    line-height: 3;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.input-field:focus {
+    background-color: var(--platinum);
+    border-color: var(--black);
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 1px 1px var(--platinum);
+}
+
+.contact-form button:hover {
+    background: var(--oxford-blue);
+    color: var(--white);
 }
