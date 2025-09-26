@@ -9,21 +9,20 @@ Restaurant page project from The Odin Project Curriculum.
 - **npm** v5.2.0 or higher
 - **Node.js** v8.2.0 or higher  
 
-To install all required packages:
+First install all required packages with:
 ```
 npm install
 ```
 
-To bundle the source files into the dist directory:
+Build the app in production mode to bundle the source files into the dist directory. This process optimizes and minifies the files for the best performance, making them ready for deployment:
 ```
-npx webpack
+npm run build
 ```
 
-Start up the dev server locally(http://localhost:8080):
+Alternatively, you can run the app in development mode. In this mode, pages reload automatically when you make changes, and errors are displayed as they occur:
 ```
-npx webpack serve
+npm run start
 ```
-Or run index.html inside dist directory
 
 ## Credits
  Photo grilled-chicken.jpg by Denis Agati via [Unsplash](https://unsplash.com/photos/a-close-up-of-chicken-on-a-grill-with-a-fork-5ld94xhya9g)
