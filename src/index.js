@@ -3,6 +3,7 @@ import { loadHomePage } from "./homepage.js";
 import { loadMenuPage } from "./menu-page.js";
 import { loadAboutPage } from "./about-page.js";
 import { loadContactPage } from "./contact-page.js";
+import { renderFooter } from "./footer.js";
 
 (() => {
     const content = document.querySelector("#content");
@@ -26,4 +27,5 @@ import { loadContactPage } from "./contact-page.js";
     });
 
     loadHomePage();
+    renderFooter();
 })();

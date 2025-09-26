@@ -248,3 +248,24 @@ body {
     background: var(--oxford-blue);
     color: var(--white);
 }
+
+/* footer section*/
+footer {
+    background-color: var(--oxford-blue);
+    color: var(--white);
+    font-size: 1.3rem;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.github-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.github-icon:hover {
+    transform: scale(1.2) rotate(180deg);
+}
