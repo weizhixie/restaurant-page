@@ -1,4 +1,4 @@
-export function loadAboutPage() {
+export function renderAboutPage() {
     const aboutSection = document.createElement("section");
     aboutSection.classList.add("aboutSection");
 

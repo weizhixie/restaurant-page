@@ -1,4 +1,4 @@
-export function loadHomePage() {
+export function renderHomePage() {
     const heroSection = document.createElement("section");
     heroSection.classList.add("hero-section");
 

@@ -1,6 +1,6 @@
 import mapImg from "./images/fake-google-map.JPG";
 
-export function loadContactPage() {
+export function renderContactPage() {
     const contactSection = document.createElement("section");
     contactSection.classList.add("contact-section");
     contactSection.append(createContactAddress(), createContactUs());

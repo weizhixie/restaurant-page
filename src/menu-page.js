@@ -38,7 +38,7 @@ const meals = [{
 },
 ];
 
-export function loadMenuPage() {
+export function renderMenuPage() {
     const menuSection = document.createElement("section");
     menuSection.classList.add("menu-section");
 

@@ -1,18 +1,18 @@
 import "./styles.css";
-import { loadHomePage } from "./homepage.js";
-import { loadMenuPage } from "./menu-page.js";
-import { loadAboutPage } from "./about-page.js";
-import { loadContactPage } from "./contact-page.js";
+import { renderHomePage } from "./homepage.js";
+import { renderMenuPage } from "./menu-page.js";
+import { renderAboutPage } from "./about-page.js";
+import { renderContactPage } from "./contact-page.js";
 import { renderFooter } from "./footer.js";
 
 (() => {
     const content = document.querySelector("#content");
     const navBtns = document.querySelectorAll(".nav-btn");
     const pages = {
-        "home-btn": loadHomePage,
-        "menu-btn": loadMenuPage,
-        "about-btn": loadAboutPage,
-        "contact-btn": loadContactPage,
+        "home-btn": renderHomePage,
+        "menu-btn": renderMenuPage,
+        "about-btn": renderAboutPage,
+        "contact-btn": renderContactPage,
     };
 
     navBtns.forEach((btn) => {
@@ -26,6 +26,6 @@ import { renderFooter } from "./footer.js";
         });
     });
 
-    loadHomePage();
+    renderHomePage();
     renderFooter();
 })();
